@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survei Pemanasan Global</title>
+</head>
+<body>
+    <h1>Survei Pemanasan Global</h1>
+    <form action="submit_survey.php" method="POST">
+        <!-- Soal 1 -->
+        <label for="question1">Apakah Anda percaya pemanasan global itu nyata?</label><br>
+        <input type="radio" name="question1" value="Ya" required> Ya<br>
+        <input type="radio" name="question1" value="Tidak"> Tidak<br><br>
+
+        <!-- Soal 2 -->
+        <label for="question2">Seberapa khawatir Anda tentang dampak pemanasan global?</label><br>
+        <select name="question2" required>
+            <option value="Sangat khawatir">Sangat khawatir</option>
+            <option value="Cukup khawatir">Cukup khawatir</option>
+            <option value="Tidak terlalu khawatir">Tidak terlalu khawatir</option>
+            <option value="Tidak khawatir">Tidak khawatir</option>
+        </select><br><br>
+
+        <!-- Soal 3 -->
+        <label for="question3">Apa tindakan yang Anda lakukan untuk mengurangi pemanasan global?</label><br>
+        <textarea name="question3" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Soal 4 -->
+        <label for="question4">Apakah Anda mendukung penggunaan energi terbarukan untuk mengurangi dampak pemanasan global?</label><br>
+        <input type="radio" name="question4" value="Ya" required> Ya<br>
+        <input type="radio" name="question4" value="Tidak"> Tidak<br><br>
+
+        <!-- Soal 5 -->
+        <label for="question5">Seberapa sering Anda menggunakan kendaraan umum untuk mengurangi emisi karbon?</label><br>
+        <select name="question5" required>
+            <option value="Setiap hari">Setiap hari</option>
+            <option value="Beberapa kali seminggu">Beberapa kali seminggu</option>
+            <option value="Jarang">Jarang</option>
+            <option value="Tidak pernah">Tidak pernah</option>
+        </select><br><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
